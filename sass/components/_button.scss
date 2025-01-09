@@ -32,7 +32,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
@@ -51,17 +53,22 @@
     z-index: -1;
     transition: all 0.4s;
   }
-}
 
-.btn:link,
-.btn:visited {
-  position: relative;
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  transition: all 0.2s;
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+
+    // Change for custom <button />
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .btn-text {
