@@ -3,9 +3,17 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo {
@@ -19,6 +27,17 @@
 
     border-top: 1px solid $color-grey-dark;
     padding-top: 2rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__copyright {
+    @include respond(tab-port) {
+      float: none;
+    }
   }
 
   &__list {
@@ -50,7 +69,6 @@
   }
 
   &__copyright {
-    width: 95%;
     float: right;
   }
 }
