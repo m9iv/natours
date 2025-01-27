@@ -4,7 +4,7 @@ Small and simple training project. Landing page for travel company with only CSS
 
 ## Demo
 
-You can visit the [Demo page](https://m9iv.github.io/kzaviryukha.github.io/demo/natours/index.html) soon.
+You can visit the [Demo page](https://m9iv.github.io/kzaviryukha.github.io/demo/natours/index.html).
 
 ### Important commands
 
